@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 9vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+header a,
+header a :visited {
+    text-decoration: none;
+    color: #FEFDFD;
+}
+
+.blocoDeConteudo {
+    width: 80%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.menu a {
+    margin-left: 40px;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #FEFDFD;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.blocoDeConteudo2 {
+    width: 80%;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.topo h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #121212;
+}
+
+.filtroDatas {
+    width: 80%;
+    height: 7vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 7px;
+}
+
+.filtros label {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #121212;
+}
+
+.filtros input {
+    padding: 7px;
+    background-color: #dcdcdc;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #121212;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.filtros input:hover {
+    border: 1px solid #121212;
+    transition: 0.3s;
+}
+
+.btnFiltro button {
+    padding: 7px;
+    background-color: #dcdcdc;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #121212;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnFiltro button:hover {
+    border: 1px solid #121212;
+    background-color: #2980B9;
+    transition: 0.3s;
+}
+
+table {
+    background-color: #FEFDFD;
+    width: 80%;
+    border: 2px solid #121212;
+    border-collapse: collapse;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #121212;
+    text-align: center;
+}
+
+thead {
+    background-color: #121212;
+    color: #FEFDFD;
+    height: 50px;
+}
+
+tbody {
+    height: 50px;
+}
+
+table th, td {
+    border: 1px solid #121212;
+}
+
+table button { 
+    padding: 7px;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FEFDFD;
+    cursor: pointer;
+}
+
+table .edit { 
+    background-color: #229954;
+    transition: 0.3s;
+}
+
+table .delete { 
+    background-color: #C0392B;
+    transition: 0.3s;
+}
+
+table .edit:hover { 
+    background-color: #215a39;
+    transition: 0.3s;
+}
+
+table .delete:hover { 
+    background-color: #581811;
+    transition: 0.3s;
+}
+
+.btnCadastrar {
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.btnCadastrar button {
+    padding: 7px;
+    background-color: #dcdcdc;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #121212;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnCadastrar button:hover {
+    border: 1px solid #121212;
+    background-color: #2980B9;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FEFDFD;
+}

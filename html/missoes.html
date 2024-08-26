@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/missoes.css">
+    <link rel="shortcut icon" href="../images/foguete_favicon.png" type="image/x-icon">
+    <title>SpaceOdyssey - Missões</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="blocoDeConteudo">
+            <div class="logo">
+                <a href="home.html">SPACEODYSSEY</a>
+            </div>
+        
+            <div class="menu">
+                <a href="home.html">HOME</a>
+                <a href="missoes.html">MISSÕES</a>
+                <a href="sobre.html">SOBRE</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="blocoDeConteudo2">
+            <div class="topo">
+                <h1>Tabela de Missões</h1>
+            </div>
+
+            <div class="filtroDatas">
+                <div class="filtros">
+                    <label>Data de Inicio:</label>
+                    <input type="date" id="dataInicial">
+                </div>
+
+                <div class="filtros">
+                    <label>Data de Final:</label>
+                    <input type="date" id="dataFinal">
+                </div>
+
+                <div class="btnFiltro">
+                    <button>FILTRAR</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOME DA MISSÃO</th>
+                        <th>ESTADO DA MISSÃO</th>
+                        <th>DATA DE LANÇAMENTO</th>
+                        <th>DURAÇÃO</th>
+                        <th>AÇÕES</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>#001</th>
+                        <td>Apollo 11</td>
+                        <td>Concluida</td>
+                        <td>16/07/1969</td>
+                        <td>8 dias</td>
+                        <td>
+                            <button class="edit">EDITAR</button>
+                            <button class="delete">DELETAR</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th>#002</th>
+                        <td>Olympus</td>
+                        <td>Concluida</td>
+                        <td>09/01/1987</td>
+                        <td>15 dias</td>
+                        <td>
+                            <button class="edit">EDITAR</button>
+                            <button class="delete">DELETAR</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th>#003</th>
+                        <td>Andromedda</td>
+                        <td>Concluida</td>
+                        <td>04/09/2001</td>
+                        <td>45 dias</td>
+                        <td>
+                            <button class="edit">EDITAR</button>
+                            <button class="delete">DELETAR</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="btnCadastrar">
+                <button>CADASTRAR</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <span>SpaceOdyssey © | 2024</span>
+    </footer>
+</body>
+</html>
